@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rooms>
+    <room id="1">
+        <description>You wake up in a humid jungle clearing, your mind foggy from Ayahuasca. A path leads north.</description>
+        <north>2</north>
+        <image>jungle_clearing</image>
+        <item>memory_shard</item>
+    </room>
+    <room id="2">
+        <description>A crumbling stone path winds through dense vines. A Shadow of the Past blocks your way east.</description>
+        <south>1</south>
+        <east>3</east>
+        <image>stone_path</image>
+        <enemy>shadow</enemy>
+    </room>
+    <room id="3">
+        <description>You stand before the Temple of Truth. Inside, you see your true potential as an adventurer.</description>
+        <west>2</west>
+        <image>temple</image>
+    </room>
+</rooms>

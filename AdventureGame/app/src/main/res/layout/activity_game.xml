@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Room background image"/>
+
+    <!-- UI Layer -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Action Buttons (Bottom Layer) -->
+        <LinearLayout
+            android:id="@+id/action_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#80FFFFFF">
+
+            <Button
+                android:id="@+id/pickup_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pick Up"
+                android:textSize="14sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/defeat_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Defeat"
+                android:textSize="14sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/return_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Return"
+                android:textSize="14sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:elevation="2dp"/>
+
+        </LinearLayout>
+
+        <!-- Navigation Button Grid (Single Row) -->
+        <LinearLayout
+            android:id="@+id/navigation_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/action_buttons"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#80FFFFFF">
+
+            <Button
+                android:id="@+id/north_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="North"
+                android:textSize="16sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/east_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="East"
+                android:textSize="16sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/south_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="South"
+                android:textSize="16sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:layout_marginEnd="5dp"
+            android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/west_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="West"
+                android:textSize="16sp"
+                android:textColor="#FF000000"
+            android:background="#00FFFFFF"
+            android:elevation="2dp"/>
+
+        </LinearLayout>
+
+        <!-- Description Text (Top Layer at Bottom) -->
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/navigation_buttons"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:textColor="#FF3C2F2F"
+            android:background="#80FFFFFF"
+            android:padding="8dp"
+            android:text="Room description here"/>
+
+    </RelativeLayout>
+</FrameLayout>
